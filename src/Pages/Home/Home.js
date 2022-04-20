@@ -1,7 +1,7 @@
 import "./Home.css"
 
 const Home = () => {
-  return <main>HomePage</main>
+  return <main className="Home">HomePage</main>
 }
 
 export default Home
