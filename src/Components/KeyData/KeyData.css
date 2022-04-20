@@ -1,0 +1,31 @@
+.keyData {
+  background-color: #fbfbfb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+  display: flex;
+  padding: 1.5em;
+}
+
+.keyDataIcon {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.keyDataInfos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.keyDataNumber {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.keyDataName {
+  font-size: 0.7em;
+  color: #74798c;
+}
