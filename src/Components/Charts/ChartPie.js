@@ -9,7 +9,7 @@ const Score = () => {
     <ResponsiveContainer
       height={230}
       width="30%"
-      className="ResponsiveScoreChart"
+      className="ResponsivePieChart"
     >
       <PieChart width={400} height={400}>
         <Pie
