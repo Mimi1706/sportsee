@@ -1,0 +1,20 @@
+.ResponsiveBarChart {
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+
+.ResponsiveLineChart {
+  background-color: #ff0000;
+  border-radius: 5px;
+}
+
+.ResponsiveRadarChart {
+  background-color: #282d30;
+  border-radius: 5px;
+}
+
+.ResponsivePieChart {
+  background-color: #fbfbfb;
+  border-radius: 5px;
+}
