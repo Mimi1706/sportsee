@@ -2,14 +2,15 @@
   background-color: black;
   width: 4.5em;
   height: 110vh;
-  position: relative;
+  position: absolute;
+  top: 6em;
 }
 
 .SideBarMenu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10em 0em 7em 0em;
+  padding: 9em 0em;
 }
 
 button {
@@ -33,5 +34,5 @@ button {
   transform: rotate(270deg);
   white-space: nowrap;
   margin-left: -4em;
-  margin-top: 5em;
+  margin-top: 1em;
 }
