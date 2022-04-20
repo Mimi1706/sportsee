@@ -4,11 +4,12 @@
   border-radius: 5px;
   display: flex;
   padding: 1.5em;
+  padding-right: 0;
+  width: 90%;
 }
 
 .keyDataIcon {
   width: 3.5em;
-  height: 3.5em;
 }
 
 .keyDataInfos {
@@ -17,11 +18,11 @@
   width: 100%;
   justify-content: center;
   text-align: left;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 .keyDataNumber {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
 }
 
