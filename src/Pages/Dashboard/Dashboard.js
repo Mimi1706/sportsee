@@ -40,8 +40,8 @@ const Dashboard = () => {
           <div className="ChartsWrapper">
             <ChartBar data={activity.data.sessions} />
             <ChartLine data={sessions.data.sessions} />
-            <ChartRadar data={performance.data.data} />
-            <ChartPie />
+            <ChartRadar data={performance.data} />
+            <ChartPie data={dataMain.data.score} />
           </div>
           <div className="KeyDataWrapper">
             <KeyData
