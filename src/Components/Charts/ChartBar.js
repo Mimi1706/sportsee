@@ -12,18 +12,58 @@ import {
 } from "recharts"
 
 const ChartBar = (props) => {
+  const CustomXAxisTick = (props) => {
+    const { x, y, payload } = props
+
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text x={3} dy={15} textAnchor="end" opacity="0.4" fontWeight={600}>
+          {payload.value + 1}
+        </text>
+      </g>
+    )
+  }
+
+  const CustomYAxisTick = (props) => {
+    const { x, y, payload } = props
+
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text x={35} dy={5} textAnchor="end" opacity="0.4" fontWeight={600}>
+          {payload.value}
+        </text>
+      </g>
+    )
+  }
+
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="ChartBarToolTip">
+          <span>{props.data[label].kilogram + "kg"}</span>
+          <span>{props.data[label].calories + "Kcal"}</span>
+        </div>
+      )
+    }
+
+    return null
+  }
+
   return (
     <ResponsiveContainer height={270} className="ResponsiveBarChart">
       <BarChart data={props.data} margin={{ top: 20, left: 30, bottom: 10 }}>
+        <text x="20" y="23" dominantBaseline="hanging" fontSize="16">
+          Activité quotidienne
+        </text>
         <CartesianGrid strokeDasharray="3" vertical={false} />
-        <XAxis tickLine={false} interval="10" tickCount={10} />
+        <XAxis tickLine={false} tick={CustomXAxisTick} />
         <YAxis
           orientation="right"
+          tick={CustomYAxisTick}
           tickLine={false}
           axisLine={false}
-          ticks={[0, 80]}
         />
-        <Tooltip />
+        <Tooltip content={<CustomTooltip />} />
         <Legend
           iconType="circle"
           verticalAlign="top"
