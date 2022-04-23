@@ -7,6 +7,7 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  Rectangle,
 } from "recharts"
 
 const ChartLine = (props) => {
@@ -42,6 +43,21 @@ const ChartLine = (props) => {
     return null
   }
 
+  const CustomCursor = (props) => {
+    const { points, width, height } = props
+    const { x, y } = points[0]
+    return (
+      <Rectangle
+        fill="#000000"
+        opacity={0.1}
+        x={x}
+        y={y - 5}
+        width={width}
+        height={height + 50}
+      />
+    )
+  }
+
   return (
     <ResponsiveContainer
       height={230}
@@ -68,7 +84,7 @@ const ChartLine = (props) => {
           domain={[0, "dataMax + 60"]}
           hide={true}
         />
-        <Tooltip content={<CustomTooltip />} />
+        <Tooltip content={<CustomTooltip />} cursor={<CustomCursor />} />
         <Line
           type="monotone"
           dataKey="sessionLength"
@@ -77,6 +93,11 @@ const ChartLine = (props) => {
           strokeWidth={2}
           opacity="0.6"
           xAxis={100}
+          activeDot={{
+            stroke: "rgba(255,255,255, 0.3)",
+            strokeWidth: 10,
+            r: 5,
+          }}
         />
       </LineChart>
     </ResponsiveContainer>
