@@ -16,12 +16,15 @@ import ChartPie from "../../Components/Charts/ChartPie"
 
 import urldatamock from "../../Utils/urldatamock"
 import apifetch from "../../Utils/Apifetch"
+import { useParams } from "react-router-dom"
 
 const Dashboard = () => {
-  const dataMain = apifetch(urldatamock.urlMainData("18"))
-  const activity = apifetch(urldatamock.urlActivity("18"))
-  const sessions = apifetch(urldatamock.urlSessions("18"))
-  const performance = apifetch(urldatamock.urlPerformance("18"))
+  let { idURL } = useParams()
+
+  const dataMain = apifetch(urldatamock.urlMainData(idURL))
+  const activity = apifetch(urldatamock.urlActivity(idURL))
+  const sessions = apifetch(urldatamock.urlSessions(idURL))
+  const performance = apifetch(urldatamock.urlPerformance(idURL))
 
   return dataMain === null ||
     activity === null ||
