@@ -12,8 +12,8 @@ All your health metrics tracked in a dashboard
 
 ## Prerequisites for installation
 
-[Git](https://git-scm.com)
-[Node](https://nodejs.org/en/) v16.13.0
+- [Git](https://git-scm.com)
+- [Node](https://nodejs.org/en/) v16.13.0
 
 ## Dependencies
 
@@ -26,11 +26,11 @@ All your health metrics tracked in a dashboard
 
 - Clone the [back-end of Sportsee](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
 - Install the dependencies with `yarn install` or `npm install`
-- Launch the back-end with `yarn start`or `npm run start` on [port 3000](localhost:3000)
+- Launch the back-end with `yarn start` or `npm run start` on [port 3000](localhost:3000)
 
 - Clone the [front-end of Sportsee](https://github.com/Mimi1706/HanNguyen_12_100422)
 - Install the dependencies with `yarn install` or `npm install`
-- Launch the back-end with `yarn start`or `npm run start` on [port 3001](localhost:3001)
+- Launch the back-end with `yarn start` or `npm run start` on [port 3001](localhost:3001)
 
 ## Author
 
