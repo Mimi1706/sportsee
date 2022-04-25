@@ -45,7 +45,7 @@ const Dashboard = () => {
   }
 
   return loadingComplete === false ? (
-    alert("Chargement...")
+    console.log("Chargement...")
   ) : (
     <>
       <Header />
