@@ -1,7 +1,5 @@
 import "./Home.css"
-
 import { Link } from "react-router-dom"
-
 import Logo from "../../Assets/Logo.png"
 
 const Home = () => {
