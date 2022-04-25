@@ -1,5 +1,6 @@
 import "./Charts.css"
 import React from "react"
+import PropTypes from "prop-types"
 import {
   RadarChart,
   Radar,
@@ -55,6 +56,10 @@ const ChartRadar = (props) => {
       </RadarChart>
     </ResponsiveContainer>
   )
+}
+
+ChartRadar.propTypes = {
+  data: PropTypes.array.isRequired,
 }
 
 export default ChartRadar

@@ -1,4 +1,5 @@
 import "./KeyData.css"
+import PropTypes from "prop-types"
 
 const KeyData = (props) => {
   return (
@@ -10,6 +11,12 @@ const KeyData = (props) => {
       </div>
     </article>
   )
+}
+
+KeyData.propTypes = {
+  src: PropTypes.node,
+  number: PropTypes.number,
+  name: PropTypes.string,
 }
 
 export default KeyData

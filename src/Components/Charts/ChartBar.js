@@ -1,5 +1,6 @@
 import "./Charts.css"
 import React from "react"
+import PropTypes from "prop-types"
 import {
   BarChart,
   CartesianGrid,
@@ -45,7 +46,6 @@ const ChartBar = (props) => {
         </div>
       )
     }
-
     return null
   }
 
@@ -90,6 +90,6 @@ const ChartBar = (props) => {
   )
 }
 
-ChartBar.propTypes = {}
+ChartBar.propTypes = { data: PropTypes.array.isRequired }
 
 export default ChartBar

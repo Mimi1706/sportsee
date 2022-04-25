@@ -1,5 +1,6 @@
 import "./Charts.css"
 import React from "react"
+import PropTypes from "prop-types"
 import {
   LineChart,
   Line,
@@ -104,6 +105,6 @@ const ChartLine = (props) => {
   )
 }
 
-ChartLine.propTypes = {}
+ChartLine.propTypes = { data: PropTypes.array.isRequired }
 
 export default ChartLine

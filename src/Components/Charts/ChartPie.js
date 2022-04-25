@@ -1,5 +1,6 @@
 import "./Charts.css"
 import React from "react"
+import PropTypes from "prop-types"
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts"
 
 const ChartPie = (props) => {
@@ -55,6 +56,10 @@ const ChartPie = (props) => {
       </PieChart>
     </ResponsiveContainer>
   )
+}
+
+ChartPie.propTypes = {
+  data: PropTypes.number.isRequired,
 }
 
 export default ChartPie
