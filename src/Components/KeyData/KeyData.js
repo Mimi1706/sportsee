@@ -15,7 +15,7 @@ const KeyData = (props) => {
 
 KeyData.propTypes = {
   src: PropTypes.node,
-  number: PropTypes.number,
+  number: PropTypes.string,
   name: PropTypes.string,
 }
 
