@@ -47,7 +47,7 @@ const ChartRadar = (props) => {
       <RadarChart
         outerRadius="55%"
         innerRadius="10%"
-        data={props.data.data}
+        data={props.data}
         margin={{ left: 20 }}
       >
         <PolarGrid radialLines={false} />

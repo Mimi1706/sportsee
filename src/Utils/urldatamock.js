@@ -6,7 +6,7 @@ const urldatamock = {
     return `../data/${id}/activity.json`
   },
   urlSessions(id) {
-    return `../data/${id}/sessions.json`
+    return `../data/${id}/average-sessions.json`
   },
   urlPerformance(id) {
     return `../data/${id}/performance.json`
