@@ -1,6 +1,7 @@
 import "./Home.css"
 import { Link } from "react-router-dom"
 import Logo from "../../Assets/Logo.png"
+import ContextButton from "../../Components/ContextButton/ContextButton"
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
           <button>Utilisateur 18</button>
         </Link>
       </div>
-      <button>API</button>
+      <ContextButton />
     </main>
   )
 }
