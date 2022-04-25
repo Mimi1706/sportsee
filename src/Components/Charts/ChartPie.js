@@ -59,7 +59,7 @@ const ChartPie = (props) => {
 }
 
 ChartPie.propTypes = {
-  data: PropTypes.number.isRequired,
+  data: PropTypes.number,
 }
 
 export default ChartPie
