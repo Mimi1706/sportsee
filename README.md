@@ -30,7 +30,7 @@ All your health metrics tracked in a dashboard
 
 - Clone the [front-end of Sportsee](https://github.com/Mimi1706/HanNguyen_12_100422)
 - Install the dependencies with `yarn install` or `npm install`
-- Launch the back-end with `yarn start` or `npm run start` on [port 3001](localhost:3001)
+- Launch the front-end with `yarn start` or `npm run start` on [port 3001](localhost:3001)
 
 ## Author
 
