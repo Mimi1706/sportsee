@@ -17,7 +17,7 @@ import ChartPie from "../../Components/Charts/ChartPie"
 import urldatamock from "../../Utils/urldatamock"
 import urldataAPI from "../../Utils/urldataAPI"
 import Apifetch from "../../Utils/Apifetch"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import { useContext } from "react"
 import { fetchContext } from "../../Context/fetchContext"
 
@@ -25,7 +25,7 @@ const Dashboard = () => {
   let { idURL } = useParams()
   let loadingComplete = true
 
-  // Switches the fetch from API to Mock
+  // Checks if the fetch should be made from API or Mock and paste the correct paths
   const { fetch } = useContext(fetchContext)
   const url = fetch === "Mock" ? urldatamock : urldataAPI
 
@@ -45,7 +45,7 @@ const Dashboard = () => {
   }
 
   return loadingComplete === false ? (
-    console.log("Chargement...")
+    <Navigate to="/error" />
   ) : (
     <>
       <Header />

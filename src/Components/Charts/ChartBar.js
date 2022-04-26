@@ -12,6 +12,7 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
+// Used in the dashboard for the activity metrics
 const ChartBar = (props) => {
   const CustomXAxisTick = (props) => {
     const { x, y, payload } = props

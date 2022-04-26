@@ -3,6 +3,7 @@ import averageSessions from "../Class/averageSessions"
 import performance from "../Class/performance"
 import mainData from "../Class/mainData"
 
+// Creates classes matching the data from the fetched json
 const ConvertData = (result, url) => {
   if (url.includes("activity")) {
     return new activityData(result.data.userId, result.data.sessions)

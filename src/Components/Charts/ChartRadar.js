@@ -9,9 +9,11 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
+// Used in the score for the performance metrics
 const CustomAngles = (props) => {
   const { x, y, cy, cx, payload } = props
 
+  // Translated in French from the json
   let allKinds = [
     "Cardio",
     "Énergie",
