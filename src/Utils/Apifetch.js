@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom"
 import ConvertData from "../Mapper/ConvertData"
 
 /**
- * Send a request using fetch api
+ * Send a request using fetch
  * @param { String } url
- * @return { JSON }
+ * @return { Element }
  */
 
 const Apifetch = (url) => {
