@@ -26,18 +26,6 @@ const ChartBar = (props) => {
     )
   }
 
-  const CustomYAxisTick = (props) => {
-    const { x, y, payload } = props
-
-    return (
-      <g transform={`translate(${x},${y})`}>
-        <text x={35} dy={5} textAnchor="end" opacity="0.4" fontWeight={600}>
-          {payload.value}
-        </text>
-      </g>
-    )
-  }
-
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
@@ -60,10 +48,14 @@ const ChartBar = (props) => {
         <XAxis tickLine={false} tick={CustomXAxisTick} />
         <YAxis
           orientation="right"
-          tick={CustomYAxisTick}
+          tick={{ fontSize: 14, fill: "#74798c" }}
           tickLine={false}
           axisLine={false}
+          dataKey="kilogram"
+          yAxisId="right"
+          domain={["dataMin-2", "dataMax+7"]}
         />
+        <YAxis hide="true" dataKey="calories" />
         <Tooltip content={<CustomTooltip />} />
         <Legend
           iconType="circle"
@@ -73,6 +65,7 @@ const ChartBar = (props) => {
           height={50}
         />
         <Bar
+          yAxisId="right"
           dataKey="kilogram"
           name="Poids (kg)"
           fill="#282D30"
@@ -85,6 +78,7 @@ const ChartBar = (props) => {
           fill="#E60000"
           barSize={10}
           radius={[10, 10, 0, 0]}
+          minPointSize={86}
         />
       </BarChart>
     </ResponsiveContainer>
