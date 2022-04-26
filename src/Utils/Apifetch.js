@@ -15,7 +15,7 @@ const Apifetch = (url) => {
     fetch(url)
       .then((resp) => resp.json())
       .then((resp) => {
-        // Load the fetch json into classes
+        // Load the fetched json into classes
         setData(ConvertData(resp, url))
       })
       // If there's an error with the data loading, redirects to the error page
