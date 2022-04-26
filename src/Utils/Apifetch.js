@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Navigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import ConvertData from "../Mapper/ConvertData"
 
 /**
@@ -10,6 +10,7 @@ import ConvertData from "../Mapper/ConvertData"
 
 const Apifetch = (url) => {
   const [data, setData] = useState(null)
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetch(url)
@@ -21,10 +22,10 @@ const Apifetch = (url) => {
       // If there's an error with the data loading, redirects to the error page
       .catch((error) => {
         if (error) {
-          ;<Navigate to="/error" />
+          navigate("/error")
         }
       })
-  }, [url])
+  }, [url, navigate])
 
   // Returns the data from the classes
   return data
