@@ -17,7 +17,7 @@ import ChartPie from "../../Components/Charts/ChartPie"
 import urldatamock from "../../Utils/urldatamock"
 import urldataAPI from "../../Utils/urldataAPI"
 import Apifetch from "../../Utils/Apifetch"
-import { Navigate, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useContext } from "react"
 import { fetchContext } from "../../Context/fetchContext"
 
@@ -45,7 +45,7 @@ const Dashboard = () => {
   }
 
   return loadingComplete === false ? (
-    <Navigate to="/error" />
+    console.log("Chargement...")
   ) : (
     <>
       <Header />
