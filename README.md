@@ -18,7 +18,7 @@ All your health metrics tracked in a dashboard
 ## Dependencies
 
 - [Prop-types](https://www.npmjs.com/package/prop-types): v15.8.1
-- [React](https://reactjs.org): v18.0.0 (:warning: WARNING: React v18.0.0 displays incompatibilies with Recharts using npm therefore we recommend using React v17.0.0 instead for npm)
+- [React](https://reactjs.org): v18.0.0 (:warning: WARNING: React v18.0.0 displays incompatibilies with Recharts using npm therefore we recommend using React v17.0.0 for npm or to use yarn instead)
 - [React-router-dom](https://reactrouter.com/web/guides/quick-start): v6.3.0
 - [Recharts](https://recharts.org/en-US): v2.1.9
 
