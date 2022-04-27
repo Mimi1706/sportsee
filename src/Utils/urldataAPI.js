@@ -1,5 +1,5 @@
 /**
- * Data paths tied to the API
+ * Paths to the API
  */
 
 const urldataAPI = {

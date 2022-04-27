@@ -1,4 +1,7 @@
 import "./Dashboard.css"
+import { useParams } from "react-router-dom"
+import { useContext } from "react"
+import { fetchContext } from "../../Utils/Context/fetchContext"
 
 import caloriesIcon from "../../Assets/KeyData/calories-icon.png"
 import carbsIcon from "../../Assets/KeyData/carbs-icon.png"
@@ -17,9 +20,6 @@ import ChartPie from "../../Components/Charts/ChartPie"
 import urldatamock from "../../Utils/urldatamock"
 import urldataAPI from "../../Utils/urldataAPI"
 import Apifetch from "../../Utils/Apifetch"
-import { useParams } from "react-router-dom"
-import { useContext } from "react"
-import { fetchContext } from "../../Utils/Context/fetchContext"
 
 /**
  * Dashboard fetching the data and displaying the metric charts + Header + Vertical nav

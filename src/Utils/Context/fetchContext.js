@@ -2,6 +2,12 @@ import { createContext, useState } from "react"
 
 export const fetchContext = createContext()
 
+/**
+ * Function that allows the switch between Mock and API
+ * @param {Object} children
+ *
+ */
+
 export const FetchProvider = ({ children }) => {
   // Data is by default fetched from the API
   const [fetch, setFetch] = useState("API")

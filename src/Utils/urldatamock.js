@@ -1,5 +1,5 @@
 /**
- * Paths tied to the mocked data
+ * Paths to the mocked data
  */
 
 const urldatamock = {

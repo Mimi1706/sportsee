@@ -27,8 +27,6 @@ const Apifetch = (url) => {
       })
   }, [url, navigate])
 
-  console.log(data)
-
   // Returns the data from the classes
   return data
 }
