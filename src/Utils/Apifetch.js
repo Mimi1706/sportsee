@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom"
 import ConvertData from "../Utils/Mapper/ConvertData"
 
 /**
- * Send a request using fetch
+ * Send a request to retrieve the data using fetch
  * @param { String } url
- * @return { Element }
+ * @return { Object }
  */
 
 const Apifetch = (url) => {
@@ -26,6 +26,8 @@ const Apifetch = (url) => {
         }
       })
   }, [url, navigate])
+
+  console.log(data)
 
   // Returns the data from the classes
   return data

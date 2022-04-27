@@ -1,7 +1,16 @@
 import "./KeyData.css"
 import PropTypes from "prop-types"
 
+/**
+ * Small component displaying a nutritional metric
+ *
+ * @param {Object} props
+ *
+ */
+
 const KeyData = (props) => {
+  console.log(props)
+
   return (
     <article className="keyData">
       <img className="keyDataIcon" src={props.src} alt="KeyData Icon"></img>

@@ -3,7 +3,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts"
 
-// Used in the dashboard for the score metrics
+/**
+ * PieChart used in the dashboard to display the props score metric
+ *
+ * @param {Number} props
+ *
+ */
+
 const ChartPie = (props) => {
   let scoreData = props.data
   let emptyData = 1 - scoreData

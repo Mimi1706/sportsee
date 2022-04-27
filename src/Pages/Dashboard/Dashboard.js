@@ -21,6 +21,10 @@ import { useParams } from "react-router-dom"
 import { useContext } from "react"
 import { fetchContext } from "../../Utils/Context/fetchContext"
 
+/**
+ * Dashboard fetching the data and displaying the metric charts + Header + Vertical nav
+ */
+
 const Dashboard = () => {
   let { idURL } = useParams()
   let loadingComplete = true

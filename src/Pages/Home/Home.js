@@ -3,6 +3,10 @@ import { Link } from "react-router-dom"
 import Logo from "../../Assets/Logo.png"
 import ContextButton from "../../Components/ContextButton/ContextButton"
 
+/**
+ * Home selection for user 12 or user 18 and Api or Mock
+ */
+
 const Home = () => {
   return (
     <main className="Home">

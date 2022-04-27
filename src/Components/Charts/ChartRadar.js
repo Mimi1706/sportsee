@@ -9,37 +9,43 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
-// Used in the score for the performance metrics
-const CustomAngles = (props) => {
-  const { x, y, cy, cx, payload } = props
-
-  // Translated in French from the json
-  let allKinds = [
-    "Cardio",
-    "Énergie",
-    "Endurance",
-    "Force",
-    "Vitesse",
-    "Intensité",
-  ]
-
-  return (
-    <g transform={`translate(${x},${y})`}>
-      <text
-        y={2 + (y - cy) / 5}
-        x={18 + (x - cx) / 3}
-        fill="white"
-        textAnchor="end"
-        fontSize="9"
-        fontWeight={600}
-      >
-        {allKinds[payload.value]}
-      </text>
-    </g>
-  )
-}
+/**
+ * RadarChart used in the dashboard to display the performance metrics
+ *
+ * @param {Array.<Object>} props
+ *
+ */
 
 const ChartRadar = (props) => {
+  const CustomAngles = (props) => {
+    const { x, y, cy, cx, payload } = props
+
+    // Translated in French from the json
+    let allKinds = [
+      "Cardio",
+      "Énergie",
+      "Endurance",
+      "Force",
+      "Vitesse",
+      "Intensité",
+    ]
+
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text
+          y={2 + (y - cy) / 5}
+          x={18 + (x - cx) / 3}
+          fill="white"
+          textAnchor="end"
+          fontSize="9"
+          fontWeight={600}
+        >
+          {allKinds[payload.value]}
+        </text>
+      </g>
+    )
+  }
+
   return (
     <ResponsiveContainer
       height={230}

@@ -1,3 +1,7 @@
+/**
+ * Data paths tied to the API
+ */
+
 const urldataAPI = {
   urlMainData(id) {
     return `http://localhost:3000/user/${id}`

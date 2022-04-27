@@ -2,6 +2,10 @@ import "./Error.css"
 import { Link } from "react-router-dom"
 import Logo from "../../Assets/Logo.png"
 
+/**
+ * Error page displayed in case of fetch error
+ */
+
 const Error = () => {
   return (
     <main className="Error">

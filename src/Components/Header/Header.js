@@ -2,6 +2,10 @@ import "./Header.css"
 import Logo from "../../Assets/Logo.png"
 import { Link } from "react-router-dom"
 
+/**
+ * Header (Logo + horizontal nav)
+ */
+
 const Header = () => {
   return (
     <header>

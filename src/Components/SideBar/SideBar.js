@@ -4,6 +4,10 @@ import icon2 from "../../Assets/SideBar/icon2.png"
 import icon3 from "../../Assets/SideBar/icon3.png"
 import icon4 from "../../Assets/SideBar/icon4.png"
 
+/**
+ * Vertical nav
+ */
+
 const SideBar = () => {
   return (
     <div className="SideBar">

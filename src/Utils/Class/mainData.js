@@ -1,3 +1,7 @@
+/**
+ * Class retrieving the main data
+ */
+
 class mainData {
   constructor(id, userInfos, score, keyData) {
     this.id = id

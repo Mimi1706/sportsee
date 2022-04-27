@@ -11,7 +11,13 @@ import {
   Rectangle,
 } from "recharts"
 
-// Used in the dashboard for the average-sessions metrics
+/**
+ * Component linechart used in the dashboard to display the average-sessions metrics
+ *
+ * @param {Array.<Object>} props
+ *
+ */
+
 const ChartLine = (props) => {
   const CustomXAxisTick = (props) => {
     const { x, y, payload } = props

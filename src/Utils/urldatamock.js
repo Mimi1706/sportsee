@@ -1,3 +1,7 @@
+/**
+ * Paths tied to the mocked data
+ */
+
 const urldatamock = {
   urlMainData(id) {
     return `../data/${id}/mainData.json`

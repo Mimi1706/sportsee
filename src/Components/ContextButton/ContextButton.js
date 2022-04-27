@@ -1,6 +1,10 @@
 import { useContext } from "react"
 import { fetchContext } from "../../Utils/Context/fetchContext"
 
+/**
+ * Button that switches between API and Mock
+ */
+
 const ContextButton = () => {
   const { toggleFetch, fetch } = useContext(fetchContext)
 
