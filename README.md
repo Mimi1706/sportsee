@@ -25,7 +25,7 @@ All your health metrics tracked in a dashboard
 ## Installing and lauching
 
 - Clone the [back-end of Sportsee](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard)
-- Install the dependencies with `yarn install` or `npm install` (WARNING! React v18.0.0 displays incompatibilies with Recharts using npm therefore we recommend using React v17.0.0 instead for npm)
+- Install the dependencies with `yarn install` or `npm install` (:warning: WARNING! React v18.0.0 displays incompatibilies with Recharts using npm therefore we recommend using React v17.0.0 instead for npm)
 - Launch the back-end with `yarn start` or `npm run start` on [port 3000](localhost:3000)
 
 - Clone the [front-end of Sportsee](https://github.com/Mimi1706/HanNguyen_12_100422)
