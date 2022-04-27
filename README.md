@@ -2,7 +2,7 @@
 
 # Sportsee : Analytic dashboard
 
-All your health metrics tracked in a dashboard
+All your health and sports metrics tracked in a dashboard
 
 ## Technologies
 
