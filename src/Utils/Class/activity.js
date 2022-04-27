@@ -1,3 +1,7 @@
+/**
+ * Class retrieving the activity data
+ */
+
 class activity {
   constructor(userId, sessions) {
     this.userId = userId
