@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import ConvertData from "../Mapper/ConvertData"
+import ConvertData from "../Utils/Mapper/ConvertData"
 
 /**
  * Send a request using fetch

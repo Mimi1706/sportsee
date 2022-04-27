@@ -19,7 +19,7 @@ import urldataAPI from "../../Utils/urldataAPI"
 import Apifetch from "../../Utils/Apifetch"
 import { useParams } from "react-router-dom"
 import { useContext } from "react"
-import { fetchContext } from "../../Context/fetchContext"
+import { fetchContext } from "../../Utils/Context/fetchContext"
 
 const Dashboard = () => {
   let { idURL } = useParams()

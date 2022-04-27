@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { FetchProvider } from "./Context/fetchContext"
+import { FetchProvider } from "./Utils/Context/fetchContext"
 
 import Dashboard from "./Pages/Dashboard/Dashboard"
 import Home from "./Pages/Home/Home"
