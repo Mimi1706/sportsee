@@ -16,6 +16,7 @@ import {
  * Component barChart used in the dashboard to display the activity metrics
  *
  * @param {Array.<Object>} props
+ * @returns {JSX} ChartBar component
  *
  */
 

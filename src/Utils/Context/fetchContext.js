@@ -5,6 +5,7 @@ export const fetchContext = createContext()
 /**
  * Function that allows the switch between Mock and API
  * @param {Object} children
+ * @returns {JSX} React component
  *
  */
 

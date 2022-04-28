@@ -13,6 +13,7 @@ import {
  * RadarChart used in the dashboard to display the performance metrics
  *
  * @param {Array.<Object>} props
+ * @returns {JSX} ChartRadar component
  *
  */
 

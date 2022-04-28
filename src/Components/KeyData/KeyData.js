@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
  * Small component displaying a nutritional metric
  *
  * @param {Object} props
+ * @returns {JSX} KeyData component
  *
  */
 

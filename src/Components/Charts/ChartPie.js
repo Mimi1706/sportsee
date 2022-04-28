@@ -7,6 +7,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts"
  * PieChart used in the dashboard to display the props score metric
  *
  * @param {Number} props
+ * @returns {JSX} ChartPie component
  *
  */
 

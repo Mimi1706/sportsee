@@ -15,6 +15,7 @@ import {
  * Component linechart used in the dashboard to display the average-sessions metrics
  *
  * @param {Array.<Object>} props
+ * @returns {JSX} ChartLine component
  *
  */
 
