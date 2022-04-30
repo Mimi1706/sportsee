@@ -21,8 +21,6 @@ import {
  */
 
 const ChartBar = (props) => {
-  console.log(props)
-
   const CustomXAxisTick = (props) => {
     const { x, y, payload } = props
 
